@@ -9,7 +9,7 @@
         <header>
             <div id="header">
                 <div id="logo">
-                    <a href="./bookshelf_index.php"><img src="./images/logo.png" alt="Bookshelf"></a>
+                    <a href="./index.php"><img src="./images/logo.png" alt="Bookshelf"></a>
                 </div>
                 <nav>
                     <a href="./bookshelf_form.php"><img src="./images/icon_plus.png" alt=""> 書籍登録</a>
