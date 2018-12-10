@@ -3,7 +3,7 @@
         return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
     }
     // MySQLサーバ接続に必要な値を変数に代入
-       $host = 'localhost';
+    $host = 'localhost';
     $username = 'root';
     $password = '';
     $db_name = 'bookshelf';
