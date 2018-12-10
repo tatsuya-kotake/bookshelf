@@ -3,10 +3,10 @@
         return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
     }
     // MySQLサーバ接続に必要な値を変数に代入
-    $host = 'localhost';
-    $username = 'root';
-    $password = '';
-    $db_name = 'bookshelf';
+    $host = 'us-cdbr-iron-east-01.cleardb.net';
+    $username = 'b6c43c7a467ff2';
+    $password = '8f6b1c3c';
+    $db_name = 'heroku_4778489ad4a8de7';
 
     // 変数を設定して、MySQLサーバに接続
     $database = mysqli_connect($host, $username, $password, $db_name);
