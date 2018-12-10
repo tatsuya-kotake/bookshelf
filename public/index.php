@@ -192,7 +192,7 @@
             </div>
         </div>
         <footer>
-            <small>© 2016 Bookshelf.</small>
+            <small>© 2018 Bookshelf.</small>
         </footer>
     </body>
 </html>
