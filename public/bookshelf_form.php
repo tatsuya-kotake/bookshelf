@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>Bookshelf | カンタン！あなたのオンライン本棚</title>
+        <title>MY BOOK SHELF</title>
         <link rel="stylesheet" href="bookshelf.css">
     </head>
     <body>
@@ -32,7 +32,7 @@
             </div>
         </div>
         <footer>
-            <small>© 2018 Bookshelf.</small>
+            <small>© 2018 My Bookshelf.</small>
         </footer>
     </body>
 </html>
