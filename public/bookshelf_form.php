@@ -18,7 +18,7 @@
         </header>
         <div id="wrapper">
             <div id="main">
-                <form action="bookshelf_index.php" method="post" class="form_book" enctype="multipart/form-data">
+                <form action="index.php" method="post" class="form_book" enctype="multipart/form-data">
                     <div class="book_title">
                         <input type="text" name="add_book_title" placeholder="書籍タイトルを入力">
                     </div>
