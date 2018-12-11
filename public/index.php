@@ -60,11 +60,11 @@
 
   if ($_POST['submit_book_unread']) {
         // 未読へ変更
-        $sql = 'UPDATE books SET status="unread" WHERE id=?';       // 実行するSQLを作成
-        $statement = mysqli_prepare($database, $sql);                // セキュリティ対策をする
-        mysqli_stmt_bind_param($statement, 'i', $_POST['book_id']);  // id=?の?の部分に代入する
-        mysqli_stmt_execute($statement);                             // SQL文を実行する
-        mysqli_stmt_close($statement);                               // SQL文を破棄する
+        $sql = 'UPDATE books SET status="unread" WHERE id=?';       
+        $statement = mysqli_prepare($database, $sql);
+        mysqli_stmt_bind_param($statement, 'i', $_POST['book_id']);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
     }
     elseif ($_POST['submit_book_reading']) {
         // 読中へ変更
@@ -115,7 +115,7 @@
         <header>
             <div id="header">
                 <div id="logo">
-                    <a href="./bookshelf_index.php"><img src="./images/logo.png" alt="Bookshelf"></a>
+                    <a href="./index.php"><img src="./images/logo.png" alt="Bookshelf"></a>
                 </div>
                 <nav>
                     <a href="./bookshelf_form.php"><img src="./images/icon_plus.png" alt=""> 書籍登録</a>
@@ -124,7 +124,7 @@
         </header>
         <div id="cover">
             <h1 id="cover_title">MY BOOK SHELF</h1>
-            <form action="bookshelf_index.php" method="post">
+            <form action="index.php" method="post">
                 <div class="book_status unread active">
                     <input type="submit" name="submit_only_unread" value="未読">
                     <div class="book_count"><?php print h($count_unread); ?></div>
@@ -158,7 +158,7 @@
                             <div class="book_title">
                                 <?php print h($title); ?>
                             </div>
-                            <form action="bookshelf_index.php" method="post">
+                            <form action="index.php" method="post">
                                 <input type="hidden" name="book_id" value="<?php print h($id); ?>">
                                         <div class="book_status unread <?php if ($status == "unread") print "active"; ?>">
                                         <input type="submit" name="submit_book_unread" value="未読">
